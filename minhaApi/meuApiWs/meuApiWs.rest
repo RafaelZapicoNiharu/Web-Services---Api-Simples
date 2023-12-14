@@ -1,0 +1,50 @@
+###get all
+GET http://localhost:45677/produtos
+###
+
+###get by id
+
+GET http://localhost:45677/produto/12
+###
+
+
+DELETE  http://localhost:45677/produto/33
+###
+
+
+###post 
+POST http://localhost:45677/produto
+Content-Type: application/json
+
+{
+      "id": 33,
+            "nome": "Chapinha da Jiafei",
+            "preco": 9999999,
+            "quantidade": 1,
+            "categoria": "Mega Jiafei Produtos",
+            "fabricante": {
+                "nomef": "Jiafei Inc",
+                "endereco": "Floptropica Jiafeia, Avenue cupcakke 69 "
+            }
+}
+###
+
+###put
+PUT http://localhost:45677/produto/33
+Content-Type: application/json
+
+{
+
+    "id": 33,
+            "nome": "Chapinha da Jiafei",
+            "preco": 200,
+            "quantidade": 1,
+            "categoria": "Mega Jiafei Produtos",
+            "fabricante": {
+                "nomef": "Jiafei Inc",
+                "endereco": "Floptropica Jiafeia, Avenue cupcakke 69 "
+            }
+      
+}
+
+###
